@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 1</title>
+</head>
+<body>
+
+<h1>Calculos de produto</h1>
+
+<p>Nome do produto: <span id="nomeProduto"></span></p>
+<p>Preço de fabrica: <span id="precoProduto"></span></p>
+<p>Taxa de Imposto: <span id="taxaImposto"></span></p>
+<p>Taxa de distribuição: <span id="taxaDistribuicao"></span></p>
+<p>Valor final: <span id="valorFinal"></span></p>
+
+    <script>
+
+        let nomeproduto;
+        let precoproduto;
+        let taxaimposto;
+        let taxadistribuicao;
+        let valorimposto;
+        let valorfinal;
+        let valorimposto2
+
+
+
+        nomeproduto = prompt("Digite o nome do Produto:")
+        precoproduto = Number (prompt("Digite o valor de fabricação:"))
+        taxaimposto = Number (prompt("Digite a taxa de imposto:"))
+        taxadistribuicao = Number (prompt("Digite a taxa de distruição:"))
+
+
+        valorfinal = precoproduto + (precoproduto * taxaimposto / 100) + taxadistribuicao
+
+        console.log(valorfinal)
+        document.getElementById("nomeProduto") .innerHTML = nomeproduto;
+        document.getElementById("precoProduto") .innerHTML = precoproduto.toFixed(2);
+        document.getElementById("taxaImposto") .innerHTML = taxaimposto.toFixed(2) + "%";
+        document.getElementById("taxaDistribuicao") .innerHTML = taxadistribuicao.toFixed(2) + "%";
+        document.getElementById("valorFinal") .innerHTML = valorfinal.toFixed(2);
+
+    </script>
+    
+</body>
+</html>

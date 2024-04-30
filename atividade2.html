@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 2</title>
+</head>
+<body>
+    
+
+<p>Nome do Cliente:<span id="cliente"></span></p>
+<p>Quantidade de Hot Dog (Preço Unitário R$ 1,00): <span id="hotdog"></span></p>
+<p>Quantidade de Hamburguer(Preço Unitário R$ 1,30): <span id="hamburguer"></span></p>
+<p>Quantidade de Cheeseburguer(Preço Unitário R$ 1,50): <span id="cheeseburguer"></span></p>
+<p>Quantidade de Refrigerante de Lata(Preço Unitário R$ 1,00): <span id="refrilata"></span></p>
+<p>Quantidade de Batata Frita(Preço Unitário R$ 0,80): <span id="batata"></span></p>
+<p>Valor Total: <span id="valorfinal"></span></p>
+
+<script>
+let nomecliente;
+let quantidadedog;
+let quantidadeburguer;
+let quantidadecheese;
+let quantidadelata;
+let quantidadebatata;
+let resultado;
+
+nomecliente = prompt("Digite o nome do cliente")
+quantidadedog = Number(prompt("Digite a quantidade de Hot Dog" ))
+quantidadeburguer = Number(prompt("Digite a quantidade de Hamburguer"))
+quantidadecheese = Number(prompt("Digite a quantidade de Cheeseburguer"))
+quantidadelata = Number(prompt("Digite a quantidade de Refrigerante de Lata"))
+quantidadebatata = Number(prompt("Digite a quantidade de Batata Frita"))
+
+resultado = (quantidadedog * 1) + (quantidadeburguer * 1.30) + (quantidadecheese * 1.50) + (quantidadelata * 1) + (quantidadebatata * 0.80)
+
+
+console.log (resultado)
+document.getElementById("cliente").innerHTML = nomecliente;
+document.getElementById("hotdog").innerHTML = quantidadedog;
+document.getElementById("hamburguer").innerHTML = quantidadeburguer;
+document.getElementById("cheeseburguer").innerHTML = quantidadecheese;
+document.getElementById("refrilata").innerHTML = quantidadelata;
+document.getElementById("batata").innerHTML = quantidadebatata;
+document.getElementById("valorfinal").innerHTML = resultado;
+
+
+
+</script>
+
+
+
+</body>
+</html>
